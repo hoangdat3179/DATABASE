@@ -1,0 +1,6 @@
+CREATE TABLE student(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    FOREIGN KEY (id) REFERENCES subject(id),
+    FOREIGN KEY (id) REFERENCES student(id),
+    point FLOAT NOT NULL
+)

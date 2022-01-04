@@ -1,0 +1,5 @@
+CREATE TABLE class(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    name TEXT NOT NULL,
+    FOREIGN KEY (id) REFERENCES teacher(id)
+)

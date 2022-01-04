@@ -1,0 +1,9 @@
+CREATE TABLE student(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    name TEXT NOT NULL,
+    birthday DATE NOT NULL,
+    address TEXT NOT NULL,
+    mobile VARCHAR(11) NOT NULL,
+    email TEXT NOT NULL,
+    FOREIGN KEY (id) REFERENCES class(id)
+)
